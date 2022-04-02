@@ -1,0 +1,40 @@
+﻿
+
+@{
+    ViewBag.Title = "Buy";
+}
+
+<br />
+<br />
+
+<div class="form-body">
+    @using (Html.BeginForm())
+    {
+        <div class="form-group">
+            Id : <input type="number" name="MedicineID" />
+        </div>
+
+        <div class="form-group">
+            Medicine Name : <input type="text" name="Name" />
+        </div>
+
+        <div class="form-group">
+            Company Name : <input type="text" name="CompanyName" />
+        </div>
+        <div class="form-group">
+            Quantity : <input type="number" name="Stock" />
+        </div>
+        <div class="form-group">
+            Price : <input type="number" name="Price" />
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Buy" class="btn button" />
+        </div>
+    }
+</div>
+<br />
+<br />
+<div>
+    @Html.ActionLink("Back to List", "GetMedicines")
+</div>

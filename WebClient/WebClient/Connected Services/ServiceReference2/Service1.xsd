@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MedicalStoreWCFService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MedicalStoreWCFService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="MedicineContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedicineID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="price" type="xs:int" />
+      <xs:element minOccurs="0" name="stock" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MedicineContract" nillable="true" type="tns:MedicineContract" />
+  <xs:complexType name="ArrayOfMedicineContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MedicineContract" nillable="true" type="tns:MedicineContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMedicineContract" nillable="true" type="tns:ArrayOfMedicineContract" />
+  <xs:complexType name="ArrayOfPurchaseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchaseContract" nillable="true" type="tns:PurchaseContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchaseContract" nillable="true" type="tns:ArrayOfPurchaseContract" />
+  <xs:complexType name="PurchaseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:int" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="MedicineCompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedicineName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MedicinePrice" type="xs:int" />
+      <xs:element minOccurs="0" name="MedicineQuantity" type="xs:int" />
+      <xs:element minOccurs="0" name="PurchaseId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PurchaseContract" nillable="true" type="tns:PurchaseContract" />
+</xs:schema>

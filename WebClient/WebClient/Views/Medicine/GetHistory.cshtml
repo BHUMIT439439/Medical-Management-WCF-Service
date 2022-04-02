@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "History";
+}
+
+<br />
+<br />
+
+<table class="table table-striped">
+    <thead class="table-heading">
+        <tr>
+            <th>ID</th>
+            <th>Medicine Name</th>
+            <th>Company Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    @foreach (var item in ViewBag.List)
+    {
+<tr>
+    <td>@item.Id</td>
+    <td>@item.MedicineName</td>
+    <td>@item.MedicineCompanyName</td>
+    <td>@item.MedicinePrice</td>
+    <td>@item.MedicineQuantity</td>
+    <td>@item.Amount</td>
+    <td>@item.Date</td>
+</tr>
+    }
+
+</table>

@@ -1,0 +1,11 @@
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\obj\Debug\MedicalStoreWCFService.csproj.CoreCompileInputs.cache
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\bin\MedicalStoreWCFService.dll.config
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\bin\MedicalStoreWCFService.dll
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\bin\MedicalStoreWCFService.pdb
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\obj\Debug\MedicalStoreWCFService.dll
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\obj\Debug\MedicalStoreWCFService.pdb
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\bin\EntityFramework.dll
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\bin\EntityFramework.SqlServer.dll
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\bin\EntityFramework.xml
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\bin\EntityFramework.SqlServer.xml
+C:\Users\bhumit\Desktop\MedicalStoreWCFService\MedicalStoreWCFService\obj\Debug\MedicalStoreWCFService.csproj.CopyComplete

@@ -1,0 +1,39 @@
+﻿@{
+        ViewBag.Title = "GetMedicines";
+    }
+
+    <br />
+    <br />
+    <p>
+        <a href="@Url.Action("InsertMedicine","Medicine")" class="btn btn-default"><i class="fa fa-plus"></i> Create New</a>
+        <a href="@Url.Action("GetHistory","Medicine")" class="btn btn-default"><i class="fa fa-plus"></i> History</a>
+    </p>
+
+    <table class="table table-striped">
+        <thead class="table-heading">
+            <tr>
+                <th>ID</th>
+                <th>Medicine Name</th>
+                <th>Company Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        @foreach (var item in ViewBag.List)
+        {
+            <tr>
+                <td>@item.MedicineID</td>
+                <td>@item.Name</td>
+                <td>@item.CompanyName</td>
+                <td>@item.price</td>
+                <td>@item.stock</td>
+                <td>
+                    <a href="@Url.Action("UpdateMedicine", "Medicine")" class="btn btn-default"><i class="fa fa-pencil"></i>  Edit</a>
+                    <a href="@Url.Action("DeleteMedicine", "Medicine")" class="btn btn-default"><i class="fa fa-trash"></i>  Delete</a>
+                    <a href="@Url.Action("BuyMedicine", "Medicine")" class="btn btn-default"><i class="fa fa-trash"></i>  Buy</a>
+                </td>
+            </tr>
+        }
+
+    </table>
